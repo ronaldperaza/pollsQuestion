@@ -1,10 +1,10 @@
 <!-- home.html -->
-{% extends "poll/base.html" %} {% block title %}Homepage{% endblock %} {% block main %}
+{% extends "poll/base.html" %} {% block title %}Encuestas App{% endblock %} {% block main %}
 <div class="row fondo">
   <div class="col-lg-8 col-lg-offset-2">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title">Available Polls</h3>
+        <h3 class="panel-title">Encuestas Disponibles</h3>
       </div>
 
       <ul class="list-group">
@@ -13,10 +13,10 @@
         <li class="list-group-item">
           <strong>{{ poll.question }}</strong>
           <span class="pull-right">
-            <a href="{% url 'vote' poll.id %}" class="btn btn-info btn-xs">Vote</a>
+            <a href="{% url 'vote' poll.id %}" class="btn btn-info btn-xs">Votar</a>
             &nbsp;
             <a href="{% url 'results' poll.id %}" class="btn btn-default btn-xs"
-              >View Results</a
+              >Mostrar Resultados</a
             >
             &nbsp;
           </span>
